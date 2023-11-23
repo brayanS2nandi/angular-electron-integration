@@ -1,13 +1,11 @@
 {
   "name": "angular-electron-integration",
   "version": "0.0.0",
+  "main": "main.js",
   "scripts": {
-    "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:angular-electron-integration": "node dist/angular-electron-integration/server/server.mjs"
+    "electron": "ng build && electron ."
   },
   "private": true,
   "dependencies": {
@@ -21,6 +19,7 @@
     "@angular/platform-server": "^17.0.0",
     "@angular/router": "^17.0.0",
     "@angular/ssr": "^17.0.3",
+    "electron": "^27.1.2",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
